@@ -1,0 +1,51 @@
+/* Style pour le conteneur de la carte de personne */
+.personaContainer {
+    display: flex; 
+    align-items: center; 
+    margin-top: 15px; 
+    margin-right: 15px; 
+    width: 100%; 
+  }
+  
+  /* Style pour la carte de document */
+  .documentCard {
+    display: flex; 
+    align-items: center; 
+    border: none; 
+    width: calc(100% - 44px); 
+    max-width: none; 
+    height: 80px; 
+    background-color: transparent; 
+  }
+  
+  /* Style pour l'élément de personne */
+  .persona {
+    display: flex; 
+    align-items: center; 
+    padding: 15px; 
+    width: 100%; 
+  }
+  
+  /* Style pour l'image de la personne */
+  .persona .ms-Persona-imageArea {
+    margin-right: 15px; 
+    flex: 0 0 auto; 
+    width: 5px; 
+    height: 5px; 
+  }
+  
+  /* Style pour le texte de la personne */
+  .persona .ms-Persona-details {
+    flex: 1 1 auto; 
+  }
+  
+  /* Style pour l'élément bottomColor */
+  .bottomColor {
+    display: none; 
+  }
+  
+  /* Style pour l'élément textOverflow */
+  .textOverflow {
+    display: none; 
+  }
+  

@@ -1,0 +1,203 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.directory {
+  .dropDownSortBy {
+    margin-bottom: 15px;
+  }
+
+  .searchBox {
+    width: "100%";
+    vertical-align: "middle";
+    margin-bottom: 25;
+  }
+  .noUsers {
+    margin-left: "auto";
+    margin-right: "auto";
+    text-align: "center";
+    padding-top: 40px;
+  }
+
+  .pivotItem {
+    overflow-wrap: break-word;
+  }
+  .pivotItem:hover {
+    border-style: solid;
+    border-width: 1.2;
+    border-color: $ms-color-themeDark;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system,
+      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .alphabets {
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: normal;
+    text-align: center;
+    &>div>div{
+      white-space: normal !important;
+    }
+  }
+   
+   /* Barre de recherche */
+   .header {
+    width: 100%; // Largeur de la barre de recherche (90% pour occuper presque tout l'espace)
+    margin: 0 auto; // Centrer horizontalement
+    background-color: #044123;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+
+  }
+
+  /* Champ de texte de la barre de recherche */
+  .searchTextBox {
+    min-width: 100px;
+    max-width: 350px;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 3.5px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: px;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+
+
+  .suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: calc(100% + 5px);
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    max-width: 350px; 
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 999;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .suggestion {
+    padding: 5px 15px; /* Réduire le rembourrage vertical */
+    font-size: 14px; /* Réduire la taille de la police */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    line-height: 1.2; /* Ajuster la hauteur de ligne */
+  }
+
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+
+  .serchWrap {
+    min-width: 550px;
+    max-width: 1000px;
+  }
+
+  /* Liste des utilisateurs */
+  .userList {
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  /* Éléments de la liste des utilisateurs */
+  .userListItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 42px;
+    height: 38px;
+  }
+
+
+}
